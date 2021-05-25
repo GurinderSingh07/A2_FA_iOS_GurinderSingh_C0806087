@@ -12,36 +12,33 @@ import CoreData
 
 struct ProductDataRepository{
     
-    func insertProducts(){
+    private let providerDataRepository = ProviderDataRepository()
+    
+    func create(record: Product){
         
-        let productData = ProductData().dataOfProducts()
+        let cdProduct = CDProduct(context: PersistentStorage.shared.context)
         
-        for product in productData{
-            
-            let cdProduct = CDProduct(context: PersistentStorage.shared.context)
-            
-            cdProduct.id = product.id
-            cdProduct.name = product.name
-            cdProduct.pDescription = product.description
-            cdProduct.price = product.price
-            cdProduct.provider = product.provider
-            
-            PersistentStorage.shared.saveContext()
-        }
+        cdProduct.id = record.id
+        cdProduct.name = record.name
+        cdProduct.pDescription = record.description
+        cdProduct.price = record.price
+        cdProduct.providerName = record.providerName
+        
+        PersistentStorage.shared.saveContext()
     }
     
     func getAll() -> [Product]?{
         
         let records = PersistentStorage.shared.fetchManagedObject(managedObject: CDProduct.self)
         guard records != nil && records?.count != 0 else {return nil}
-
+        
         var results: [Product] = []
         
         records!.forEach({ (cdProduct) in
             
             results.append(cdProduct.convertToProduct())
         })
-
+        
         return results
     }
     
@@ -52,6 +49,37 @@ struct ProductDataRepository{
         guard result != nil else {return nil}
         
         return result!.convertToProduct()
+    }
+    
+    func updateProduct(record: Product){
+        
+        let product = getCdProduct(byProductId: record.id)
+        
+        guard product != nil else {return}
+        
+        product?.id = record.id
+        product?.name = record.name
+        product?.pDescription = record.description
+        product?.price = record.price
+        
+        if product?.providerName != record.providerName{
+            
+            providerDataRepository.move(oldProvider: (product?.providerName)!, toNew: record)
+        }
+        else{
+            
+            product?.providerName = record.providerName
+            PersistentStorage.shared.saveContext()
+        }
+    }
+    
+    func delete(byIdentifier id: String){
+        
+        let product = getCdProduct(byProductId: id)
+        guard product != nil else {return}
+        
+        PersistentStorage.shared.context.delete(product!)
+        PersistentStorage.shared.saveContext()
     }
     
     private func getCdProduct(byProductId id: String) -> CDProduct?

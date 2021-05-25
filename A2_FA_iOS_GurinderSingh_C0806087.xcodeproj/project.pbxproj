@@ -17,6 +17,15 @@
 		9B2EC721265936A0005782D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B2EC71F265936A0005782D7 /* LaunchScreen.storyboard */; };
 		9B2EC72A26593FB0005782D7 /* ListTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2EC72926593FB0005782D7 /* ListTableCell.swift */; };
 		9B2EC72C26593FEF005782D7 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2EC72B26593FEF005782D7 /* ListViewController.swift */; };
+		9B35F45F265CE9B900C831B6 /* CDProvider+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B35F45D265CE9B900C831B6 /* CDProvider+CoreDataClass.swift */; };
+		9B35F460265CE9B900C831B6 /* CDProvider+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B35F45E265CE9B900C831B6 /* CDProvider+CoreDataProperties.swift */; };
+		9B35F462265CEA5700C831B6 /* ProviderDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B35F461265CEA5700C831B6 /* ProviderDataRepository.swift */; };
+		9B35F464265CEAA800C831B6 /* ProviderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B35F463265CEAA800C831B6 /* ProviderManager.swift */; };
+		9B35F466265CEADE00C831B6 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B35F465265CEADE00C831B6 /* Provider.swift */; };
+		9B35F468265CEB2000C831B6 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B35F467265CEB2000C831B6 /* String+Extension.swift */; };
+		9B35F46A265CEB5E00C831B6 /* CDProviderExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B35F469265CEB5E00C831B6 /* CDProviderExtension.swift */; };
+		9B35F46C265CEBD200C831B6 /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B35F46B265CEBD200C831B6 /* ProductListViewController.swift */; };
+		9B35F46E265CEC0B00C831B6 /* ProductListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B35F46D265CEC0B00C831B6 /* ProductListCell.swift */; };
 		9B6E216A2659583600FBF8D5 /* ProductFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6E21692659583600FBF8D5 /* ProductFormViewController.swift */; };
 		9B6E2171265969A000FBF8D5 /* ProductManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6E2170265969A000FBF8D5 /* ProductManager.swift */; };
 		9B6E2173265969CE00FBF8D5 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6E2172265969CE00FBF8D5 /* Product.swift */; };
@@ -38,6 +47,15 @@
 		9B2EC722265936A0005782D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B2EC72926593FB0005782D7 /* ListTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableCell.swift; sourceTree = "<group>"; };
 		9B2EC72B26593FEF005782D7 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		9B35F45D265CE9B900C831B6 /* CDProvider+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDProvider+CoreDataClass.swift"; sourceTree = "<group>"; };
+		9B35F45E265CE9B900C831B6 /* CDProvider+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDProvider+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9B35F461265CEA5700C831B6 /* ProviderDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderDataRepository.swift; sourceTree = "<group>"; };
+		9B35F463265CEAA800C831B6 /* ProviderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderManager.swift; sourceTree = "<group>"; };
+		9B35F465265CEADE00C831B6 /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
+		9B35F467265CEB2000C831B6 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		9B35F469265CEB5E00C831B6 /* CDProviderExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDProviderExtension.swift; sourceTree = "<group>"; };
+		9B35F46B265CEBD200C831B6 /* ProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
+		9B35F46D265CEC0B00C831B6 /* ProductListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListCell.swift; sourceTree = "<group>"; };
 		9B6E21692659583600FBF8D5 /* ProductFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductFormViewController.swift; sourceTree = "<group>"; };
 		9B6E2170265969A000FBF8D5 /* ProductManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductManager.swift; sourceTree = "<group>"; };
 		9B6E2172265969CE00FBF8D5 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
@@ -60,7 +78,9 @@
 		9B0FAB6826597096006485F2 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				9B35F467265CEB2000C831B6 /* String+Extension.swift */,
 				9B0FAB69265970CD006485F2 /* CDProductExtension.swift */,
+				9B35F469265CEB5E00C831B6 /* CDProviderExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -90,8 +110,8 @@
 				9B6E216F2659696C00FBF8D5 /* DataRepository */,
 				9B6E216C2659693100FBF8D5 /* Manager */,
 				9B6E216D2659693F00FBF8D5 /* Models */,
-				9B2EC72826593F00005782D7 /* TableViewCell */,
 				9B6E216B2659584200FBF8D5 /* View Controllers */,
+				9B2EC72826593F00005782D7 /* TableViewCell */,
 				9B2EC7172659369D005782D7 /* Main.storyboard */,
 				9B2EC71D265936A0005782D7 /* Assets.xcassets */,
 				9B2EC71F265936A0005782D7 /* LaunchScreen.storyboard */,
@@ -105,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				9B2EC72926593FB0005782D7 /* ListTableCell.swift */,
+				9B35F46D265CEC0B00C831B6 /* ProductListCell.swift */,
 			);
 			path = TableViewCell;
 			sourceTree = "<group>";
@@ -115,6 +136,7 @@
 				9B0FAB6826597096006485F2 /* Extensions */,
 				9B2EC72B26593FEF005782D7 /* ListViewController.swift */,
 				9B6E21692659583600FBF8D5 /* ProductFormViewController.swift */,
+				9B35F46B265CEBD200C831B6 /* ProductListViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -123,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				9B6E2170265969A000FBF8D5 /* ProductManager.swift */,
+				9B35F463265CEAA800C831B6 /* ProviderManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -131,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				9B6E2172265969CE00FBF8D5 /* Product.swift */,
+				9B35F465265CEADE00C831B6 /* Provider.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -141,6 +165,8 @@
 				9B0FAB6626596E34006485F2 /* PersistentStorage.swift */,
 				9B6E217626596CA700FBF8D5 /* CDProduct+CoreDataClass.swift */,
 				9B6E217726596CA700FBF8D5 /* CDProduct+CoreDataProperties.swift */,
+				9B35F45D265CE9B900C831B6 /* CDProvider+CoreDataClass.swift */,
+				9B35F45E265CE9B900C831B6 /* CDProvider+CoreDataProperties.swift */,
 			);
 			path = CoreDataSupportFiles;
 			sourceTree = "<group>";
@@ -149,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				9B6E217426596A1B00FBF8D5 /* ProductDataRepository.swift */,
+				9B35F461265CEA5700C831B6 /* ProviderDataRepository.swift */,
 			);
 			path = DataRepository;
 			sourceTree = "<group>";
@@ -226,17 +253,26 @@
 			files = (
 				9B6E216A2659583600FBF8D5 /* ProductFormViewController.swift in Sources */,
 				9B0FAB6A265970CD006485F2 /* CDProductExtension.swift in Sources */,
+				9B35F464265CEAA800C831B6 /* ProviderManager.swift in Sources */,
+				9B35F468265CEB2000C831B6 /* String+Extension.swift in Sources */,
 				9B6E2173265969CE00FBF8D5 /* Product.swift in Sources */,
+				9B35F466265CEADE00C831B6 /* Provider.swift in Sources */,
 				9B2EC72A26593FB0005782D7 /* ListTableCell.swift in Sources */,
+				9B35F46A265CEB5E00C831B6 /* CDProviderExtension.swift in Sources */,
 				9B6E2171265969A000FBF8D5 /* ProductManager.swift in Sources */,
 				9B2EC72C26593FEF005782D7 /* ListViewController.swift in Sources */,
 				9B2EC7122659369D005782D7 /* AppDelegate.swift in Sources */,
 				9B6E217826596CA700FBF8D5 /* CDProduct+CoreDataClass.swift in Sources */,
 				9B6E217926596CA700FBF8D5 /* CDProduct+CoreDataProperties.swift in Sources */,
+				9B35F46E265CEC0B00C831B6 /* ProductListCell.swift in Sources */,
 				9B6E217526596A1B00FBF8D5 /* ProductDataRepository.swift in Sources */,
 				9B2EC7142659369D005782D7 /* SceneDelegate.swift in Sources */,
+				9B35F460265CE9B900C831B6 /* CDProvider+CoreDataProperties.swift in Sources */,
+				9B35F46C265CEBD200C831B6 /* ProductListViewController.swift in Sources */,
+				9B35F462265CEA5700C831B6 /* ProviderDataRepository.swift in Sources */,
 				9B2EC71C2659369D005782D7 /* A2_FA_iOS_GurinderSingh_C0806087.xcdatamodeld in Sources */,
 				9B0FAB6726596E34006485F2 /* PersistentStorage.swift in Sources */,
+				9B35F45F265CE9B900C831B6 /* CDProvider+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

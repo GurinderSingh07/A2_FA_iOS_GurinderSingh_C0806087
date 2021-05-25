@@ -10,8 +10,9 @@ import Foundation
 
 extension CDProduct{
     
+    // Convert CDProvider into Product
     func convertToProduct() -> Product {
         
-        return Product(id: self.id ?? "Error", name: self.name ?? "Error", description: self.pDescription ?? "Error", price: self.price ?? "Error", provider: self.provider ?? "Error")
+        return Product(id: self.id ?? "error", name: self.name ?? "error", description: self.pDescription ?? "error", price: self.price ?? "error", providerName: self.providerName ?? "error")
     }
 }

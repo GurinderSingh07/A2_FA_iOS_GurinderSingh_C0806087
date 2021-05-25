@@ -5,9 +5,25 @@
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="pDescription" optional="YES" attributeType="String"/>
         <attribute name="price" optional="YES" attributeType="String"/>
-        <attribute name="provider" optional="YES" attributeType="String"/>
+        <attribute name="providerName" optional="YES" attributeType="String"/>
+        <relationship name="toProvider" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDProvider" inverseName="toProduct" inverseEntity="CDProvider"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="id"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="CDProvider" representedClassName="CDProvider" syncable="YES">
+        <attribute name="providerName" optional="YES" attributeType="String"/>
+        <relationship name="toProduct" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="CDProduct" inverseName="toProvider" inverseEntity="CDProduct"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="providerName"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
     </entity>
     <elements>
-        <element name="CDProduct" positionX="-63" positionY="-18" width="128" height="104"/>
+        <element name="CDProduct" positionX="-63" positionY="-18" width="128" height="119"/>
+        <element name="CDProvider" positionX="-63" positionY="18" width="128" height="59"/>
     </elements>
 </model>

@@ -14,37 +14,16 @@ class Product{
     let name: String
     let description: String
     let price: String
-    let provider: String
+    let providerName: String
+    let provider: Provider?
     
-    init(id: String, name: String, description: String, price: String, provider: String) {
+    init(id: String, name: String, description: String, price: String, providerName: String, provider: Provider? = nil) {
         
         self.id = id
         self.name = name
         self.description = description
         self.price = price
+        self.providerName = providerName
         self.provider = provider
-    }
-}
-
-struct ProductData{
-    
-        // Set up product data
-        func dataOfProducts() ->[Product]{
-        
-        let product = [
-            
-            Product(id: "1", name: "Civic", description: "Honda Civic 001", price: "$20,000", provider: "Honda"),
-            Product(id: "2", name: "Accord", description: "Honda Accord 002", price: "$21,000", provider: "Honda"),
-            Product(id: "3", name: "Odyssey", description: "Honda Odyssey 003", price: "$22,000", provider: "Honda"),
-            Product(id: "4", name: "Passport", description: "Honda Passport 004", price: "$23,000", provider: "Honda"),
-            Product(id: "5", name: "Elantra", description: "Hyundai Elantra 005", price: "$24,000", provider: "Hyundai"),
-            Product(id: "6", name: "Venue", description: "Hyundai Venue 006", price: "$25,000", provider: "Hyundai"),
-            Product(id: "7", name: "Kona", description: "Hyundai Kona 007", price: "$26,000", provider: "Hyundai"),
-            Product(id: "8", name: "Tucson", description: "Hyundai Tucson 008", price: "$27,000", provider: "Hyundai"),
-            Product(id: "9", name: "Vitara", description: "Suzuki Vitara 009", price: "$28,000", provider: "Suzuki"),
-            Product(id: "10",name: "Kazashi", description: "Suzuki Kazashi 010", price: "$29,000", provider: "Suzuki"),
-        ]
-        
-        return product
     }
 }

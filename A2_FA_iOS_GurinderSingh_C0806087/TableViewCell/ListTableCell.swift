@@ -10,19 +10,22 @@ import UIKit
 
 class ListTableCell: UITableViewCell {
 
-    //MARK:- IBOutlets
-    @IBOutlet weak var lblTitle: UILabel!
-    @IBOutlet weak var lblSubtitle: UILabel!
-    
-    //MARK:- Cell functions
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
+     //MARK:- IBOutlets
+       @IBOutlet weak var iconFolder: UIImageView!
+       @IBOutlet weak var lblTitle: UILabel!
+       @IBOutlet weak var lblSubtitle: UILabel!
+       
+       @IBOutlet weak var constLeadingLblTitle: NSLayoutConstraint!
+       
+       //MARK:- Cell Funcitons
+       override func awakeFromNib() {
+           super.awakeFromNib()
+           // Initialization code
+       }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
+       override func setSelected(_ selected: Bool, animated: Bool) {
+           super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
-    }
+           // Configure the view for the selected state
+       }
 }

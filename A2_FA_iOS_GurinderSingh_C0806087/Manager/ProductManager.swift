@@ -12,9 +12,14 @@ struct ProductManager{
     
     private let dataRepository = ProductDataRepository()
     
-    func insertProducts() {
+    func create(record: Product){
         
-        dataRepository.insertProducts()
+        dataRepository.create(record: record)
+    }
+    
+    func getAllProducts() -> [Product]?{
+        
+        return dataRepository.getAll()
     }
     
     func getProduct(byProduct id: String) -> Product?{
@@ -22,8 +27,13 @@ struct ProductManager{
         return dataRepository.get(byProduct: id)
     }
     
-    func getAllProducts() -> [Product]?{
+    func updateProduct(record: Product){
         
-        return dataRepository.getAll()
+        dataRepository.updateProduct(record: record)
+    }
+    
+    func deleteProduct(record: Product){
+        
+        dataRepository.delete(byIdentifier: record.id)
     }
 }
